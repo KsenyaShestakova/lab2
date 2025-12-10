@@ -31,22 +31,22 @@ class BST:
     def get_height(self):   # высота дерева
         return self._get_height(self.root)
 
-    def inorder_traversal(self):    # проход по
+    def inorder_traversal(self):    # центрированный проход
         result = []
         self._inorder(self.root, result)
         return result
 
-    def preorder_traversal(self):   # проход по
+    def preorder_traversal(self):   # прямой проход
         result = []
         self._preorder(self.root, result)
         return result
 
-    def postorder_traversal(self):  # проход по
+    def postorder_traversal(self):  # обратный проход
         result = []
         self._postorder(self.root, result)
         return result
 
-    def level_order_traversal(self):    # проход по
+    def level_order_traversal(self):    # обход в ширину
         result = []
         if not self.root:
             return result

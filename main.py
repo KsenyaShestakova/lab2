@@ -173,6 +173,8 @@ def main():
     print(f"Высота: {bst.get_height()}")
     print(f"Прямой обход: {bst.preorder_traversal()}")
     print(f"Центрированный обход: {bst.inorder_traversal()}")
+    print(f"Обратный обход: {bst.postorder_traversal()}")
+    print(f"Обход в ширину: {bst.level_order_traversal()}")
     print(f"Минимум: {bst.find_min()}, Максимум: {bst.find_max()}")
 
     print("\n2. АВЛ-дерево:")
@@ -181,7 +183,10 @@ def main():
         avl.insert(key)
 
     print(f"Высота: {avl.get_height()}")
+    print(f"Прямой обход: {avl.preorder_traversal()}")
     print(f"Центрированный обход: {avl.inorder_traversal()}")
+    print(f"Обратный обход: {avl.postorder_traversal()}")
+    print(f"Обход в ширину: {avl.level_order_traversal()}")
 
     print("\n3. Красно-черное дерево:")
     rb = RB.RedBlackTree()
@@ -190,6 +195,7 @@ def main():
 
     print(f"Высота: {rb.get_height()}")
     print(f"Центрированный обход: {rb.inorder_traversal()}")
+    print(f"обход: {rb.level_order_traversal()}")
 
 
 if __name__ == "__main__":
